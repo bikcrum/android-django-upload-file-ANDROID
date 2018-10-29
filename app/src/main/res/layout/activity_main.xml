@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab_record"
+            android:backgroundTint="#ffffff"
+            app:borderWidth="0dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_record"
+            android:layout_centerInParent="true" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab_upload"
+            android:backgroundTint="#ffffff"
+            app:borderWidth="0dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_upload"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/fab_record" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab_download"
+            android:backgroundTint="#ffffff"
+            app:borderWidth="0dp"
+            android:layout_margin="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_download"
+            android:layout_toEndOf="@+id/fab_record" />
+
+    </RelativeLayout>
+
+</LinearLayout>
